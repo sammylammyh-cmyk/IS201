@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTR Quotes</title>
+
+<style>
+@font-face {
+           font-family: 'MyCustomFont';
+    src: url('../font/HobbitonBrushhandhobbitonBrush-WygA.ttf');
+}
+
+@font-face {
+    font-family: 'Ananda';
+    src: url('../font/AnandaBlackPersonalUseRegular-rg9Rx.ttf');
+}
+
+ /* BACKGROUND IMAGE */
+        body {
+            font-family: 'MyCustomFont', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../images/gandalf.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+ /* ✅ NAVBAR (TOP RIGHT) */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+  nav a {
+            background-color: gold;
+            color: black;
+            padding: 10px 15px;
+            margin-left: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+  /* ✅ TITLE BOX (GREEN) */
+        .title-box {
+            font-family: 'MyCustomFont', Arial, sans-serif;
+            background-color: darkgreen;
+            color: gold;
+            text-align: center;
+            padding: 30px;
+            margin: 50px auto 20px auto;
+            width: 60%;
+            border-radius: 10px;
+        }
+
+.title-box h1 {
+            font-family: 'MyCustomFont', Arial, sans-serif;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+ /* ✅ BUTTON (GOLD) */
+        .quote-button {
+            background-color: gold;
+            color: black;
+            padding: 15px 25px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+  .quote-button:hover {
+            background-color: #d4af37;
+        }
+
+/* ✅ QUOTE BOX (BEIGE/PARCHMENT LOOK) */
+        .quote-box {
+            font-family: 'Ananda', Arial, sans-serif;
+            background-color: #f5e6c8;
+            padding: 30px;
+            margin: 30px auto;
+            width: 60%;
+            border-radius: 10px;
+            font-size: 22px;
+            color: black;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+        }
+</style>
+
+</head>
+
+<body>
+
+
+  <!-- NAVIGATION (TOP RIGHT) -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="scratch.html">Get to know me: Movies</a>
+        <a href="app.html">Quick Break</a>
+    </nav>
+
+  <!-- TITLE + BUTTON -->
+    <div class="title-box">
+        <h1>Middle Earth Wisdom</h1>
+        <button class="quote-button" onclick="generateQuote()">
+            Click to Begin Your Journey
+        </button>
+    </div>
+
+ <!-- QUOTE DISPLAY -->
+    <div id="quote" class="quote-box">
+        Your quote will appear here...
+    </div>
+
+
+    <!-- ✅ JAVASCRIPT -->
+    <script>
+
+ const quotes = [
+            "All we have to decide is what to do with the time that is given to us.",
+            "There’s some good in this world, and it’s worth fighting for.",
+            "I do not fear death.",
+            "Not all those who wander are lost.",
+            "Even the smallest person can change the course of the future.",
+            "War must be, while we defend our lives against a destroyer.",
+            "There is always hope.",
+            "Do not be eager to deal out death in judgement.",
+            "Courage is found in unlikely places.",
+            "I can't carry it for you, but I can carry you.",
+            "The world is not in your books and maps. It's out there.",
+
+        ]
+
+ function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").innerText = quotes[randomIndex];
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/CascadiaCode-jEZzj.ttf');
+}
+
+body {
+    background-color: black;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    color: #ffd700;
+    margin: 0;
+}
+
+
+/* NAV BAR */
+.nav {
+    background-color: black;
+    padding: 15px;
+    border-bottom: 2px solid #ffd700;
+}
+
+.nav-right {
+    text-align: right;
+}
+
+.nav a {
+    color: #ffd700;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 30px;
+}
+
+.header h1 {
+    font-size: 48px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+/* CONTENT */
+.content {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center; /* centers EVERYTHING */
+}
+
+/* MOVIE BOX */
+.movie {
+    background-color: rgba(255, 215, 0, 0.1);
+    padding: 25px;
+    margin: 40px 0;
+    border-radius: 12px;
+    border: 1px solid #ffd700;
+    text-align: center; /* THIS FIXES EVERYTHING */
+}
+
+
+/* FIX POSTER SIZE */
+.poster {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+
+border-radius: 10px;
+}
+
+/* CENTER LISTS */
+ol {
+    font-size: 18px;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* CENTER VIDEOS */
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 22px;
+}
+
+.list-section {
+    border: 2px solid #ffd700; 
+    width: 50%;
+    margin: 30px auto;
+    background-color: #ffd700;   /* gold background */
+    color: black;                /* black text */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.list-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: black;   /* important since box is gold now */
+}
+
+/* GOLD BOX LIST FIX */
+.list-section ol {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.list-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    text-align: left;
+    display: block;
+}
+
+/* MOVIE LIST FIX */
+.movie ul {
+    list-style-type: square;
+    padding-left: 25px;
+    font-size: 18px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+/* ✅ CLEAN TABLEAU SECTION */
+.tableau-section {
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+}
+
+/* ✅ CENTER THE TITLE */
+.tableau-section h2 {
+    text-align: center;
+}
+
+/* ✅ FIX TABLEAU SIZE PROPERLY */
+.tableauPlaceholder {
+    width: 100%;
+}
+
+
